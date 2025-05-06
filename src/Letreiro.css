@@ -1,0 +1,20 @@
+
+.letreiro {
+    font-size: 6em;
+    font-family: monospace;
+    color: #9c1e1e;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #333;
+    animation: blink-caret 0.7s step-end infinite;
+  }
+  
+  /* Animação de cursor piscante */
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  
+  
