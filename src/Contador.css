@@ -1,0 +1,27 @@
+.contador-container {
+  text-align: center;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pessoa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem {
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+  
