@@ -3,6 +3,14 @@ import './Contador.css';
 import garotoImg from './img/garoto.png';
 import meninaImg from './img/menina.png';
 
+function BotaoContador({ onClick, children }) {
+  return (
+    <button onClick={onClick} className="botao-contador">
+      {children}
+    </button>
+  );
+}
+
 const Contador = () => {
   const [homens, setHomens] = useState(0);
   const [mulheres, setMulheres] = useState(0);
@@ -15,14 +23,22 @@ const Contador = () => {
         <div className="pessoa">
           <img src={garotoImg} alt="Homem" className="imagem" />
           <h2>Homens: {homens}</h2>
-          <button onClick={() => setHomens(homens + 1)}>+</button>
-          <button onClick={() => setHomens(Math.max(0, homens - 1))}>-</button>
+          <BotaoContador onClick={() => setHomens(prev => prev + 1)}>
+            +
+          </BotaoContador>
+          <BotaoContador onClick={() => setHomens(prev => Math.max(0, prev - 1))}>
+            -
+          </BotaoContador>
         </div>
         <div className="pessoa">
           <img src={meninaImg} alt="Mulher" className="imagem" />
           <h2>Mulheres: {mulheres}</h2>
-          <button onClick={() => setMulheres(mulheres + 1)}>+</button>
-          <button onClick={() => setMulheres(Math.max(0, mulheres - 1))}>-</button>
+          <BotaoContador onClick={() => setMulheres(prev => prev + 1)}>
+            +
+          </BotaoContador>
+          <BotaoContador onClick={() => setMulheres(prev => Math.max(0, prev - 1))}>
+            -
+          </BotaoContador>
         </div>
       </div>
       <h2>Total: {total}</h2>

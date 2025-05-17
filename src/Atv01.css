@@ -1,0 +1,79 @@
+/* Atv01.css - Estilo para a Atividade 01 */
+
+.titulo-superior {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #2c3e50;
+  margin: 20px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Container principal para os componentes */
+.componentes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo base para ambos os componentes (Relogio e Letreiro) */
+.componente {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* Estilo para o link "Voltar" */
+.link-inferior {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.link-inferior:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.link-inferior:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Estilos específicos para o Relógio (caso precise) */
+.relogio {
+  font-size: 1.5rem;
+  font-family: 'Courier New', monospace;
+  color: #2c3e50;
+}
+
+/* Estilos específicos para o Letreiro (caso precise) */
+.letreiro {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

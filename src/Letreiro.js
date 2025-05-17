@@ -4,7 +4,7 @@ import './Letreiro.css';
 
 
 function Letreiro() {
-  const texto = "CONHEÇA A FATEC";
+  const texto = "CONHEÇA A FATEC !!!";
   const [textoExibido, setTextoExibido] = useState("");
   const [index, setIndex] = useState(0);
   const [pausa, setPausa] = useState(false);
