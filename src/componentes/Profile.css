@@ -1,0 +1,8 @@
+/* Profile.css */
+.profile-img {
+    height: 100px;        /* Ajuste o valor conforme desejado */
+    width: auto;          /* Mantém a proporção da largura automaticamente */
+    border-radius: 8px;   /* Bordas arredondadas (opcional) */
+    object-fit: cover;    /* Garante que a imagem preencha a altura sem distorção */
+    
+}

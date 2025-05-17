@@ -1,0 +1,89 @@
+/* Atv03.css - Versão harmonizada */
+
+/* Container principal */
+.atv03-container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: calc(100vh - 200px);
+}
+
+/* Título principal */
+.atv03-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  margin: 0 auto 30px;
+  width: 80%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Galeria */
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Itens da galeria */
+.galeria > div {
+  width: 180px;
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 4px solid #3498db;
+}
+
+.galeria > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos dos itens */
+h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #3498db;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 0;
+  width: auto;
+  max-width: 80%;
+}
+
+/* Link Voltar (mantendo consistência) */
+.link-inferior {
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0;
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.link-inferior:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+

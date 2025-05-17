@@ -1,0 +1,12 @@
+.gallery-container {
+    display: flex;              /* Ativa o flexbox */
+    flex-direction: row;     
+    align-items: center;        /* Centraliza os elementos horizontalmente */
+    justify-content: center;    /* Centraliza os elementos verticalmente */
+    text-align: center;         /* Centraliza o texto */
+    margin-top: 100px;
+    margin-bottom: -10px;
+    
+}
+
+
