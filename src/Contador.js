@@ -41,7 +41,7 @@ const Contador = () => {
           </BotaoContador>
         </div>
       </div>
-      <h2>Total: {total}</h2>
+      <h2 className="total">Total: {total}</h2>
     </div>
   );
 };

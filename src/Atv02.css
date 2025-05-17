@@ -1,0 +1,130 @@
+/* Atv02.css - Estilo para a Atividade 02 (Contador) */
+
+.titulo-superior {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #2c3e50;
+  margin: 20px 0 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Container principal */
+.contador-container {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do contador */
+.contador-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+/* Container dos contadores */
+.contador {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Estilo de cada bloco (Homens/Mulheres) */
+.pessoa {
+  flex: 1;
+  min-width: 250px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.pessoa:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagens */
+.imagem {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #3498db;
+  margin-bottom: 15px;
+}
+
+/* Títulos (Homens/Mulheres) */
+.pessoa h2 {
+  color: #2c3e50;
+  margin: 15px 0;
+  font-size: 1.4rem;
+}
+
+/* Botões */
+.botao-contador {
+  margin: 5px;
+  padding: 10px 20px;
+  min-width: 50px;
+  font-size: 1.2rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.botao-contador:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.botao-contador:active {
+  transform: scale(0.98);
+}
+
+/* Total */
+.total {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  display: inline-block;
+  min-width: 200px;
+}
+
+/* Link Voltar */
+.link-inferior {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0;
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.link-inferior:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

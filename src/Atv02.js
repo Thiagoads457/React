@@ -2,6 +2,7 @@
 
 import Contador from "./Contador";
 import {Link} from "react-router-dom";
+import "./Atv02.css";
 
 
 function Atv02(){
