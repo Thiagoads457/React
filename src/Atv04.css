@@ -1,0 +1,53 @@
+
+
+/* Estilização geral do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cor de fundo clara */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilização do container principal */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #242427; /* Fundo branco */
+    border: 1px solid #e0e0e0; /* Borda leve */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilização do AlertButton */
+.button {
+    display: inline-block;
+    background-color: #181616; /* Cor de alerta (vermelho) */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de mão ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave */
+    padding: 20px;
+}
+
+.button:hover {
+    background-color: #312e2e; /* Tom mais escuro no hover */
+}
+
+.button:active {
+    background-color: #1a1818; /* Tom mais escuro ao clicar */
+}
+
+/* Mensagem de alerta */
+.alert-message {
+    margin-top: 20px;
+    color: #201d1d; /* Cor combinando com o botão */
+    font-size: 14px;
+}
