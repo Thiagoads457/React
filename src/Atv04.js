@@ -1,5 +1,7 @@
 // src/Atv04.js
 import React from "react";
+import { Link } from "react-router-dom";
+
 import './Atv04.css';
 
 import Toolbar from "./componentes/Toolbar";
@@ -22,6 +24,8 @@ import BucketList from "./componentes/BucketList";
 export default function Atv04() {
   return (
     <div className="atv04-container">
+
+        
       <h1>Atividade 04 - Componentes Interativos</h1>
 
       <section>
@@ -93,6 +97,8 @@ export default function Atv04() {
         <h2>14. BucketList</h2>
         <BucketList />
       </section>
+      <Link to="/" className="link-inferior">Voltar</Link>
     </div>
+    
   );
 }
