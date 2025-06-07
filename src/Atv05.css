@@ -1,0 +1,193 @@
+/* Container principal */
+.atv05 {
+  max-width: 1000px;
+  width: 90%;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: calc(100vh - 200px);
+}
+
+/* Título principal */
+.atv05 h1 {
+  text-align: center;
+  color: #2c3e50;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  margin: 0 auto 30px;
+  width: 80%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Seções */
+.atv05 section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-top: 3px solid #3498db;
+}
+
+/* Títulos das seções */
+.atv05 h2 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+/* Componentes dentro das seções */
+.atv05 > section > div {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+/* Link Voltar */
+.link-inferior {
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0;
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.link-inferior:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilos para os botões */
+.atv05 button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.atv05 button:hover {
+  background-color: #2980b9;
+}
+
+.atv05 button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Estilos para inputs e textareas */
+.atv05 input,
+.atv05 textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.atv05 textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Painel do Accordion */
+.atv05 .panel {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #ecf0f1;
+}
+
+.atv05 .panel h3 {
+  margin-top: 0;
+  color: #3498db;
+}
+
+/* Lista de contatos */
+.atv05 .contact-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.atv05 .contact-list li {
+  margin-bottom: 10px;
+}
+
+.atv05 .contact-list button {
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  color: #2c3e50;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.atv05 .contact-list button:hover {
+  background-color: #e8f4fc;
+}
+
+/* Área de chat */
+.atv05 .chat {
+  flex-grow: 1;
+}
+
+.atv05 .chat textarea {
+  width: 100%;
+  max-width: none;
+}
+
+/* Layout do Messenger */
+.atv05 .messenger-container {
+  display: flex;
+  gap: 20px;
+}
+
+.atv05 .contact-list {
+  width: 200px;
+}
+
+/* Mensagens de erro */
+.atv05 .Error {
+  color: #e74c3c;
+  background-color: #fdecea;
+  padding: 8px;
+  border-radius: 4px;
+  border-left: 3px solid #e74c3c;
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+  .atv05 .messenger-container {
+    flex-direction: column;
+  }
+  
+  .atv05 .contact-list {
+    width: 100%;
+  }
+  
+  .atv05 {
+    padding: 15px;
+    width: 95%;
+  }
+}

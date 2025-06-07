@@ -5,7 +5,7 @@ import "./Home.css";
 const Home = () => {
   return(
     <div className="home-container">
-      <h1>Página Inicial</h1>
+      <h1>Atividades</h1>
       <nav>
         <ul>
           <li>
@@ -19,6 +19,9 @@ const Home = () => {
           </li>
           <li>
             <Link to="/Atv04">Atividade 04 - Componentes Interativos</Link>
+          </li>
+          <li>
+            <Link to="/Atv05">Atividade 05 - Gerenciamento de Estado</Link>
           </li>
         </ul>
       </nav>
