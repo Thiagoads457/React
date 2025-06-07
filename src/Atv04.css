@@ -1,53 +1,148 @@
+/* Atv04.css - Versão harmonizada com Atv03 */
 
-
-/* Estilização geral do corpo da página */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa; /* Cor de fundo clara */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* Container principal */
+.atv04-container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: calc(100vh - 200px);
 }
 
-/* Estilização do container principal */
-.container {
-    text-align: center;
-    padding: 20px;
-    background-color: #242427; /* Fundo branco */
-    border: 1px solid #e0e0e0; /* Borda leve */
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+/* Título principal */
+.atv04-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  margin: 0 auto 30px;
+  width: 80%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* Estilização do AlertButton */
-.button {
-    display: inline-block;
-    background-color: #181616; /* Cor de alerta (vermelho) */
-    color: white; /* Cor do texto */
-    font-size: 16px; /* Tamanho da fonte */
-    font-weight: bold; /* Negrito */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Cantos arredondados */
-    cursor: pointer; /* Cursor de mão ao passar sobre o botão */
-    transition: background-color 0.3s ease; /* Transição suave */
-    padding: 20px;
+/* Seções */
+.atv04-container section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-top: 3px solid #3498db;
 }
 
-.button:hover {
-    background-color: #312e2e; /* Tom mais escuro no hover */
+/* Títulos das seções */
+.atv04-container h2 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ecf0f1;
 }
 
-.button:active {
-    background-color: #1a1818; /* Tom mais escuro ao clicar */
+/* Componentes dentro das seções */
+.atv04-container > section > div {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
 }
 
-/* Mensagem de alerta */
-.alert-message {
-    margin-top: 20px;
-    color: #201d1d; /* Cor combinando com o botão */
-    font-size: 14px;
+/* Link Voltar (mantendo consistência) */
+.link-inferior {
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0;
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.link-inferior:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilos para os componentes interativos */
+.atv04-container button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.atv04-container button:hover {
+  background-color: #2980b9;
+}
+
+.atv04-container input, 
+.atv04-container select, 
+.atv04-container textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+/* Efeito de hover para itens interativos */
+.atv04-container li, 
+.atv04-container .shape, 
+.atv04-container .gallery-item {
+  transition: all 0.2s ease;
+}
+
+.atv04-container li:hover, 
+.atv04-container .shape:hover, 
+.atv04-container .gallery-item:hover {
+  background-color: #e8f4fc;
+  transform: translateX(2px);
+}
+
+/* Ajustes nos botões */
+.atv04-container button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 16px; /* Aumenta o tamanho do botão */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 8px; /* Adiciona espaço acima */
+  margin-bottom: 12px; /* Adiciona espaço abaixo */
+}
+
+.atv04-container button:hover {
+  background-color: #2980b9;
+}
+
+/* Espaçamento entre textos */
+.atv04-container p,
+.atv04-container h2 {
+  margin-bottom: 15px; /* Separa os textos */
+}
+
+/* Ajuste na lista de itens */
+.atv04-container li {
+  padding: 10px;
+  margin-bottom: 10px; /* Adiciona separação entre itens */
+}
+
+/* Separação dos elementos dentro das seções */
+.atv04-container > section > div {
+  padding: 15px;
+  margin: 10px 0;
 }

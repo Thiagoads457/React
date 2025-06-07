@@ -28,3 +28,6 @@ export default function App() {
     );
   }
   
+  import MovingDot from './componentes/MovingDot';
+
+
